@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 import Todos from "./components/Todos/Todos";
+import Todo from "./components/models/todo";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Todos items={["Hacer cosas", "Hacer mas cosas"]} />
+    <Todos items={[new Todo("Hacer cosas"), new Todo("Hacer mas cosas")]} />
   </React.StrictMode>,
   document.getElementById("root")
 );
