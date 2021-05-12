@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-import Todos from "./components/Todos/Todos";
-import Todo from "./components/models/todo";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Todos items={[new Todo("Hacer cosas"), new Todo("Hacer mas cosas")]} />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
